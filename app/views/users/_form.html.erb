@@ -1,0 +1,52 @@
+<%= form_with(model: user, local: true) do |form| %>
+  <% if user.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(user.errors.count, "error") %> prohibited this user from being saved:</h2>
+
+      <ul>
+      <% user.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :username %>
+    <%= form.text_field :username %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password %>
+    <%= form.password_field :password %>
+  </div>
+
+  <div class="field">
+    <%= form.label :password_confirmation %>
+    <%= form.password_field :password_confirmation %>
+  </div>
+
+  <div class="field">
+    <%= form.label :displayed_phone_number %>
+    <%= form.text_field :displayed_phone_number, type: 'tel' %>
+  </div>
+
+  <div class="field">
+    <label for="channel">Verification Method</label>
+    <label><input type="radio" name="channel" value="sms" checked>SMS</label>
+    <label><input type="radio" name="channel" value="voice">Call</label>
+  </div>
+
+  <div class="actions">
+    <%= form.submit 'Sign Up' %>
+  </div>
+<% end %>
+
+
+<script>
+  var input = document.querySelector("#user_displayed_phone_number");
+  window.intlTelInput(input, {
+    hiddenInput: "phone_number",
+    preferredCountries: ["us", "gb", "co", "de"]
+  });
+</script>

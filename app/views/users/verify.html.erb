@@ -1,0 +1,19 @@
+<% title 'Verify' %>
+
+<header><h1>Verify</h1></header>
+
+<p id="notice"><%= notice %></p>
+
+<%= form_tag(verify_url) do %>
+  <div class="field">
+    <%= label_tag :verification_code %>
+    <%= text_field_tag :verification_code %>
+  </div>
+
+  <div class="actions">
+    <%= submit_tag 'Verify' %>
+  </div>
+<% end %>
+
+
+<%= link_to 'Back', users_path %>

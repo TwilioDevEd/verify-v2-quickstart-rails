@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= yield(:title) %> - Twilio Verify</title>
+    <%= csrf_meta_tags %>
+    <%= csp_meta_tag %>
+    <meta content="width=device-width, initial-scale=1" name="viewport" />
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+
+  <body>
+    <nav>
+      <h1>Twilio Verify</h1>
+      <ul>
+        <li><%= link_to 'Register', register_path %></li>
+        <li><%= link_to 'Log In', login_path %></li>
+      </ul>
+    </nav>
+    <section class="content">
+      <%= yield %>
+    </section>
+  </body>
+</html>

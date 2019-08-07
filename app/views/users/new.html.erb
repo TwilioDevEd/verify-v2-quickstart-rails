@@ -1,0 +1,7 @@
+<% title 'Register' %>
+
+<header><h1>Register</h1></header>
+
+<%= render 'form', user: @user, except: [:verified] %>
+
+<%= link_to 'Back', users_path %>

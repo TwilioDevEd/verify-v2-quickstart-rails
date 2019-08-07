@@ -1,0 +1,24 @@
+// Place all the styles related to the Users controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+
+input[type="submit"] {
+  background-color: #4caf50;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  font-size: 24px;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-top: 10px;
+  min-height: 1em;
+}
+
+input[type="tel"] {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.intl-tel-input {
+  margin-bottom: 10px;
+}
