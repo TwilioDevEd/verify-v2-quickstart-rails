@@ -1,0 +1,7 @@
+language: ruby
+
+before_install:
+  - bundle install
+  
+script:
+- rails test

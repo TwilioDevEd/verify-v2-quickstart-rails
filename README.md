@@ -4,6 +4,8 @@
 
 This application example demonstrates how to do simple phone verification with Ruby on Rails Framework, and Twilio Verify.
 
+[![Build Status](https://travis-ci.org/TwilioDevEd/verify-v2-quickstart-rails.svg?branch=master)](https://travis-ci.org/TwilioDevEd/verify-v2-quickstart-rails)
+
 ## Local Development
 
 1. Clone the project and cd into it.
