@@ -100,7 +100,6 @@ class UsersController < ApplicationController
     end
 
     def start_verification(to, channel='sms')
-      puts 'NOOOOOOOOOOOOOOOOOOOOO'
       channel = 'sms' unless ['sms', 'voice'].include? channel
       verification = @client.verify.services(ENV['VERIFICATION_SID'])
                                    .verifications
@@ -112,6 +111,6 @@ class UsersController < ApplicationController
       verification_check = @client.verify.services(ENV['VERIFICATION_SID'])
                                          .verification_checks
                                          .create(:to => phone, :code => code)
-      return verification_check.valid
+      return verification_check.status == 'approved'
     end
 end
