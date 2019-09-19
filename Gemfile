@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 git_source(:github) { |repo| "https://github.com/#{repo}.git" }
 
-ruby '>= 2.2.2'
+ruby '>= 2.3'
 
 gem 'twilio-ruby', '~> 5.23.0'
 gem 'dotenv-rails', '~> 2.7.2'

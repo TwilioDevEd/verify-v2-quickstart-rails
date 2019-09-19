@@ -13,38 +13,28 @@ This application example demonstrates how to do simple phone verification with R
 git clone ...
 cd verify-v2-quickstart-rails/
 ```
-
 1. Copy `.env.example` to `.env` to setup you environment.
 ```bash
 cp .env.example .env
 ```
-
 1. Edit `.env` to add your Twilio access keys.
-
 ```
 TWILIO_ACCOUNT_SID=ACXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 TWILIO_AUTH_TOKEN=7axxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
 TWILIO_VERIFICATION_SID=VAXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 ```
-
 1. Install gem dependencies
-
 ```bash
 bundle install
 ```
-
 1. Run migrations to create the database.
-
 ```bash
 rails db:migrate
 ```
-
 1. Run the application.
-
 ```bach
 rails server
 ```
-
 1. Check it out at [http://localhost:3000](http://localhost:3000)
 
 
