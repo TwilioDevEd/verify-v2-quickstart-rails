@@ -1,7 +1,21 @@
-FROM alpine/bundle
+FROM ruby:2.6
 
-COPY . ./
+WORKDIR /usr/src/app
+
+COPY Gemfile ./
 
 RUN bundle install
 
-RUN rails test
+COPY . .
+
+# Install a Javascript environment in the container to avoid ExecJS::RuntimeUnavailable
+# RUN curl -sL https://deb.nodesource.com/setup_10.x | bash - \
+#     && apt install -y nodejs
+
+RUN make install
+
+RUN make database
+
+EXPOSE 3000
+
+CMD ["make", "serve"]
