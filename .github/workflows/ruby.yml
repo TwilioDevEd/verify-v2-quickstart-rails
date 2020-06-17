@@ -46,7 +46,7 @@ jobs:
         run: gem install sqlite3 --platform=ruby -- --with-sqlite3-include=/c:/ProgramData/ProgramData/lib/SQLite/tools
       - name: Install libv8 gem (Windows)
         if: runner.os == 'Windows'
-        run: gem install libv8 -v '3.16.14.11' -- --with-system-v8
+        run: gem install libv8 -v '7.3.492.27.1' --source 'https://rubygems.org/'
       - name: Install gems
         run: |
           gem install bundler
