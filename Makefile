@@ -1,3 +1,6 @@
+ 
+.PHONY: install database serve
+
 install:
 	bundle install
 
