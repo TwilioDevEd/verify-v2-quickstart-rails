@@ -2,7 +2,8 @@
 .PHONY: install database serve
 
 install:
-	bundle install
+	bundle install; \
+	npm install;
 
 database:
 	bundle exec rails db:migrate

@@ -6,7 +6,7 @@
 
 ![](https://github.com/TwilioDevEd/verify-v2-quickstart-rails/workflows/Ruby/badge.svg)
 
-> We are currently in the process of updating this sample template. If you are encountering any issues with the sample, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues) and we'll try to help you.
+> This template is part of Twilio CodeExchange. If you encounter any issues with this code, please open an issue at [github.com/twilio-labs/code-exchange/issues](https://github.com/twilio-labs/code-exchange/issues).
 
 ## About
 
@@ -25,7 +25,8 @@ Implementations in other languages:
 ### Requirements
 
 - [Ruby](https://www.ruby-lang.org/) **2.6.x** version.
-- [Sqlite3](https://www.sqlite.org/)
+- [Sqlite3](https://www.sqlite.org/).
+- [Node.js](https://nodejs.org/en/) **10.x** or **12.x** version.
 
 ### Twilio Account Settings
 
