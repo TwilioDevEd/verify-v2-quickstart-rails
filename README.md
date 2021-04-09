@@ -24,7 +24,7 @@ Implementations in other languages:
 
 ### Requirements
 
-- [Ruby](https://www.ruby-lang.org/) **2.6.x** version.
+- [Ruby](https://www.ruby-lang.org/) **3.0.x** version.
 - [Sqlite3](https://www.sqlite.org/).
 - [Node.js](https://nodejs.org/en/) **10.x** or **12.x** version.
 
